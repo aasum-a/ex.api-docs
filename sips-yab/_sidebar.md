@@ -5,4 +5,4 @@
 - [Overview](/sips-yab/README.md)
 - **Panduan Proyek**
   - [Ringkasan Teknis](/sips-yab/panduan/ringkasan-teknik.md)
-  - [Setup Lokal](/sips-yab/panduan/setup.md)
+  - [Panduan Instalasi](/sips-yab/panduan/panduan-instalasi.md)
