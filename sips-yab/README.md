@@ -2,7 +2,7 @@
 
 > Sistem Informasi Penerimaan Siswa Yayasan Al Ma'soem Bandung.
 
-Sistem ini dirancang untuk memfasilitasi proses Penerimaan Peserta Didik Baru (PPDB) secara online, mulai dari pendaftaran akun, verifikasi berkas, hingga pengumuman kelulusan.
+Sistem ini dirancang untuk memfasilitasi proses Pendaftaran Calon Siswa/i Al Ma'soem secara online, mulai dari pendaftaran akun, verifikasi berkas, hingga pengumuman kelulusan.
 
 ---
 
@@ -10,29 +10,61 @@ Sistem ini dirancang untuk memfasilitasi proses Penerimaan Peserta Didik Baru (P
 
 Berikut adalah kapabilitas utama sistem saat ini:
 
-- **Front-Office (Siswa/Wali):**
+- **Front-Office (Siswa dan Orang Tua/Wali):**
   - [x] Registrasi Akun & Login
   - [x] Input Biodata & Upload Dokumen (KK, Akta, Ijazah)
+  - [x] Metode Pembayaran Terintegrasi
   - [x] Cetak Kartu Bukti Pendaftaran (PDF)
-- **Back-Office (Admin/Panitia):**
+- **Back-Office (Admin, Panitia dan Stakeholders):**
   - [x] Dashboard Statistik Real-time
   - [x] Verifikasi Dokumen (Approve/Reject)
   - [x] Export Data ke Excel
 
----
+## Alur Pendaftaran Siswa
 
-## Persyaratan
+Berikut adalah alur pendaftaran sistem sebagai Pendaftar Baru (Siswa):
 
-Sebelum Anda mulai, pastikan Anda telah menginstal hal-hal berikut di mesin lokal Anda:
+```mermaid
+flowchart TD
+    Start([Mulai: Landing Page]) --> Choice1{Pilih Pendaftar}
 
-- **PHP:** `^8.4.x`
-- **Node.js:** `^22.x`
-- **Composer:** Version 2.x
-- **NPM**
+    %% Cabang Pilihan
+    Choice1 -- Pendaftar Baru --> Choice2{Tipe Akun?}
+    Choice1 -- Alumni --> AlumniFlow[Alur Alumni]
 
-> ✨ Tips: Alat seperti Laragon (untuk Windows) atau Laravel Valet/Herd (untuk macOS) dapat membantu Anda mengelola dependensi ini dengan mudah.
+    %% Cabang Tipe Akun
+    Choice2 -- Siswa --> FormInput[Isi Form Registrasi]
+    Choice2 -- Orang Tua --> ParentFlow[Alur Orang Tua]
 
----
+    %% Proses Validasi
+    FormInput --> Validate{Validasi Server}
+    Validate -- Error/Invalid --> ShowError[Tampil Pesan Error]
+    ShowError --> FormInput
 
-## [Panduan Instalasi](/sips-yab/panduan/setup.md) 
-Ikuti langkah-langkah berikut untuk menginstal dan menjalankan salinan lokal proyek ini.
+    %% OTP Flow
+    Validate -- Valid --> GenOTP[Generate & Kirim OTP]
+    GenOTP --> InputOTP[User Input OTP]
+    InputOTP --> VerifyOTP{Verifikasi OTP?}
+
+    VerifyOTP -- Salah/Expired --> InputOTP
+    VerifyOTP -- Benar --> Active[Set Akun Aktif]
+
+    %% Auto Login & Middleware
+    Active --> AutoLogin[Auto-Login User]
+    AutoLogin --> CheckFamily{Cek Data Keluarga?}
+
+    %% Logic Force Redirect
+    CheckFamily -- Kosong (NULL) --> InputFamily[Form Wajib: KK & Ortu]
+    InputFamily --> CheckFamily
+
+    CheckFamily -- Ada Data --> Dashboard([Masuk Dashboard])
+
+    %% Styling (Biar cantik warnanya)
+    classDef decision fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef terminal fill:#ccf,stroke:#333,stroke-width:2px;
+    classDef success fill:#cfc,stroke:#333,stroke-width:2px;
+
+    class Choice1,Choice2,Validate,VerifyOTP,CheckFamily decision;
+    class Start,AlumniFlow,ParentFlow terminal;
+    class Dashboard,Active success;
+```
