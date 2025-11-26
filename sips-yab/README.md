@@ -30,7 +30,7 @@ flowchart TD
 
     %% Cabang Pilihan
     Choice1 -- Pendaftar Baru --> Choice2{Tipe Akun?}
-    Choice1 -- Alumni --> AlumniFlow[Alur Alumni]
+    Choice1 -- Alumni --> AlumniFlow[Alur alumni]
 
     %% Cabang Tipe Akun
     Choice2 -- Siswa --> FormInput[Isi Form Registrasi]
@@ -67,4 +67,3 @@ flowchart TD
     class Choice1,Choice2,Validate,VerifyOTP,CheckFamily decision;
     class Start,AlumniFlow,ParentFlow terminal;
     class Dashboard,Active success;
-```
