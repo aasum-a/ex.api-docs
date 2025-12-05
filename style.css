@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #42b983;
+  --secondary-color: #35495e;
+  --yellow-hint: #ffd700;
+  --blue-hint: #87ceeb;
+  --green-hint: #90ee90;
+  --red-hint: #ff6b6b;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+}
+
+.mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.mermaid svg {
+  max-width: 50% !important;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .mermaid svg {
+    max-width: 100% !important;
+  }
+}
+
+.hint.yellow {
+  background-color: var(--yellow-hint);
+  padding: 5px;
+  border-radius: 5px;
+  color: #333;
+  font-family: var(--font-family);
+  line-height: var(--line-height-base);
+}
+
+.hint.blue {
+  background-color: var(--blue-hint);
+  padding: 5px;
+  border-radius: 5px;
+  color: #333;
+  font-family: var(--font-family);
+  line-height: var(--line-height-base);
+}
+
+.hint.green {
+  background-color: var(--green-hint);
+  padding: 5px;
+  border-radius: 5px;
+  color: #333;
+  font-family: var(--font-family);
+  line-height: var(--line-height-base);
+}
+
+.hint.red {
+  background-color: var(--red-hint);
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: var(--font-family);
+  line-height: var(--line-height-base);
+}
+
+.step-item {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 20px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.step-item h3 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+.step-item p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}

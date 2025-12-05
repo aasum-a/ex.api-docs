@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="_media/logo.webp" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
     />
+    <link rel="stylesheet" href="style.css" />
     <style>
       :root {
         /* Ganti Warna Utama (Sama kayak themeColor) */
@@ -30,23 +32,6 @@
         /* Ganti Warna Link Sidebar Pas Aktif */
         /* --sidebar-nav-link-color--active: #e53935; */
       }
-
-      .mermaid {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-      }
-
-      .mermaid svg {
-        max-width: 80% !important;
-        height: auto;
-      }
-
-      @media screen and (max-width: 768px) {
-        .mermaid svg {
-          max-width: 100% !important;
-        }
-      }
     </style>
   </head>
   <body>
@@ -66,10 +51,6 @@
         mermaidConfig: {
           querySelector: ".mermaid",
         },
-        flowchart: {
-          useMaxWidth: true,
-          htmlLabels: true,
-        },
       };
     </script>
     <!-- Docsify v4 -->
@@ -78,7 +59,15 @@
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script src="https://unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
     <script>
-      mermaid.initialize({ startOnLoad: true });
+      mermaid.initialize({
+        startOnLoad: true,
+        securityLevel: "loose",
+        flowchart: {
+          useMaxWidth: true,
+          htmlLabels: true,
+          curve: "step",
+        },
+      });
     </script>
   </body>
 </html>

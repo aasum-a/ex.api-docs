@@ -1,4 +1,4 @@
-# Technical Overview
+# Technical Summary
 
 > In this section...
 
@@ -169,14 +169,14 @@ Untuk menghentikan kedua server, tekan **`Ctrl + C`** di terminal.
 
 Berikut adalah beberapa perintah yang paling umum tersedia untuk proyek ini.
 
-| Perintah               | Keterangan                                           |
-| :-------------------- | :-------------------------------------------------- |
+| Perintah              | Keterangan                                                   |
+| :-------------------- | :----------------------------------------------------------- |
 | `composer run dev`    | Memulai kedua server Vite dan server PHP untuk pengembangan. |
-| `npm run dev`         | Memulai hanya server Vite untuk pengembangan aset.      |
-| `npm run build`       | Mengkompilasi dan meminimalkan aset untuk produksi.        |
-| `php artisan serve`   | Memulai hanya server PHP untuk pengembangan Laravel.     |
-| `php artisan test`    | Menjalankan test suite aplikasi (PHPUnit).                |
-| `php artisan migrate` | Menjalankan migrasi database.                            |
+| `npm run dev`         | Memulai hanya server Vite untuk pengembangan aset.           |
+| `npm run build`       | Mengkompilasi dan meminimalkan aset untuk produksi.          |
+| `php artisan serve`   | Memulai hanya server PHP untuk pengembangan Laravel.         |
+| `php artisan test`    | Menjalankan test suite aplikasi (PHPUnit).                   |
+| `php artisan migrate` | Menjalankan migrasi database.                                |
 
 ### Documentations for Google Drive Storage
 
