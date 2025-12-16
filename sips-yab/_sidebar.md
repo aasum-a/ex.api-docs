@@ -9,6 +9,27 @@
 
 **Dokumentasi API**
 
+- [**Beasiswa Calon Siswa**](/sips-yab/dokumentasi-api/api/beasiswa-calon-siswa.md)
+- [**Payment**](/sips-yab/dokumentasi-api/api/callback-notification.md)
+- [**Sync Data Master**](/sips-yab/dokumentasi-api/api/sync-data.md)
+
+- [**Pendaftaran**](/sips-yab/dokumentasi-api/pendaftaran/README.md)
+
+  - **Master**
+
+    - [Unit](/sips-yab/dokumentasi-api/pendaftaran/master/unit.md)
+    - [Tahun Ajaran](/sips-yab/dokumentasi-api/pendaftaran/master/tahun-ajaran.md)
+    - [Gelombang](/sips-yab/dokumentasi-api/pendaftaran/master/gelombang.md)
+
+  - **Calon Siswa**
+
+    - [Data Calon Siswa](/sips-yab/dokumentasi-api/pendaftaran/calon-siswa/data-calon-siswa.md)
+    - [Data Orang Tua](/sips-yab/dokumentasi-api/pendaftaran/calon-siswa/data-orang-tua.md)
+    - [Tahap Pendaftaran melalui Admin](/sips-yab/dokumentasi-api/pendaftaran/calon-siswa/tahap-pendaftaran-by-admin.md)
+    - [Progress Pendaftaran](/sips-yab/dokumentasi-api/pendaftaran/calon-siswa/progress.md)
+    - [Mutasi Calon Siswa](/sips-yab/dokumentasi-api/pendaftaran/calon-siswa/mutasi-calon-siswa.md)
+    - [Pengunduran Diri](/sips-yab/dokumentasi-api/pendaftaran/calon-siswa/pengunduran-diri.md)
+
 - [**Master Keuangan**](/sips-yab/dokumentasi-api/keuangan/README.md)
 
   - [Tagihan](/sips-yab/dokumentasi-api/keuangan/master/tagihan.md)
@@ -23,3 +44,20 @@
 - [**Laporan**](/sips-yab/dokumentasi-api/laporan/laporan.md)
 
 - [**Payment**](/)
+
+- [**Pengaturan**](/sips-yab/dokumentasi-api/pengaturan/README.md)
+
+  - **Konten**
+
+    - [Alur Pendaftaran](/sips-yab/dokumentasi-api/pengaturan/konten/alur-pendaftaran.md)
+    - [Jalur Pendaftaran](/sips-yab/dokumentasi-api/pengaturan/konten/jalur-pendaftaran.md)
+    - [Program Pendidikan](/sips-yab/dokumentasi-api/pengaturan/konten/program-pendidikan.md)
+    - [Slider](/sips-yab/dokumentasi-api/pengaturan/konten/slider.md)
+    - [Testimoni Alumni](/sips-yab/dokumentasi-api/pengaturan/konten/testimoni-alumni.md)
+    - [Web Profile](/sips-yab/dokumentasi-api/pengaturan/konten/web-profile.md)
+
+  - **Sistem**
+    - [Permission](/sips-yab/dokumentasi-api/pengaturan/sistem/permission.md)
+    - [Role](/sips-yab/dokumentasi-api/pengaturan/sistem/role.md)
+    - [User](/sips-yab/dokumentasi-api/pengaturan/sistem/user.md)
+    - [Web Service](/sips-yab/dokumentasi-api/pengaturan/sistem/web-service.md)
