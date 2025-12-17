@@ -13,6 +13,11 @@
 - [**Payment**](/sips-yab/dokumentasi-api/api/callback-notification.md)
 - [**Sync Data Master**](/sips-yab/dokumentasi-api/api/sync-data.md)
 
+- [**Dashboard**](/sips-yab/dokumentasi-api/main/dashboard/README.md)
+
+  - [Tahapan Pendaftaran](/sips-yab/dokumentasi-api/main/dashboard/tahapan-pendaftaran.md)
+  - [Pilih Sesi Data](/sips-yab/dokumentasi-api/main/dashboard/pilih-sesi-data.md)
+
 - [**Pendaftaran**](/sips-yab/dokumentasi-api/pendaftaran/README.md)
 
   - **Master**
