@@ -20,6 +20,8 @@ Berikut adalah kapabilitas utama sistem saat ini:
   - [x] Verifikasi Dokumen (Approve/Reject)
   - [x] Export Data ke Excel
 
+> Jika gambar diagramnya tidak muncul, silakan _refresh_ halamannnya.
+
 ## Alur Pembuatan Akun Pendaftaran (Siswa)
 
 Berikut adalah alur pendaftaran sistem sebagai Pendaftar Baru (Siswa):
