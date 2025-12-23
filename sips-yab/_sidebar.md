@@ -9,6 +9,7 @@
 
 **Dokumentasi API**
 
+- [**Authentication**](/sips-yab/dokumentasi-api/auth/auth.md)
 - [**Beasiswa Calon Siswa**](/sips-yab/dokumentasi-api/api/beasiswa-calon-siswa.md)
 - [**Payment**](/sips-yab/dokumentasi-api/api/callback-notification.md)
 - [**Sync Data Master**](/sips-yab/dokumentasi-api/api/sync-data.md)
@@ -17,6 +18,8 @@
 
   - [Tahapan Pendaftaran](/sips-yab/dokumentasi-api/main/dashboard/tahapan-pendaftaran.md)
   - [Pilih Sesi Data](/sips-yab/dokumentasi-api/main/dashboard/pilih-sesi-data.md)
+  - [Pengajuan Mutasi Siswa](/sips-yab/dokumentasi-api/main/dashboard/mutasi-siswa.md)
+  - [Pengaturan & Notifikasi](/sips-yab/dokumentasi-api/main/dashboard/pengaturan-notifikasi.md)
 
 - [**Pendaftaran**](/sips-yab/dokumentasi-api/pendaftaran/README.md)
 
