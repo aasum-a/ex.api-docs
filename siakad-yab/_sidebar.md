@@ -30,3 +30,4 @@
 - [**Transfer Siswa SIPS**](/siakad-yab/dokumentasi-api/admin/transfer-siswa-sips.md)
 - [**Pindah Kelas & Keluar**](/siakad-yab/dokumentasi-api/admin/pindah-keluar.md)
 - [**Laporan Akademik**](/siakad-yab/dokumentasi-api/admin/laporan-akademik.md)
+- [**Master Ekstrakurikuler**](/siakad-yab/dokumentasi-api/admin/master-ekstrakurikuler.md)
